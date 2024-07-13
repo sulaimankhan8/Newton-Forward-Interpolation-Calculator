@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton Forward Interpolation Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Newton Forward Interpolation Calculator</h1>
+        <form id="dataForm">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>X Values</th>
+                        <th>Y Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" class="x-value" required></td>
+                        <td><input type="number" class="y-value" required></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" id="addRowBtn">Add Row</button>
+            <br>
+            <label for="interpolateX">Enter x to interpolate:</label>
+            <input type="number" id="interpolateX" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
